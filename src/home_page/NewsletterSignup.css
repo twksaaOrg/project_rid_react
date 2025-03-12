@@ -1,0 +1,42 @@
+.newsletter-signup {
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 40px;
+    text-align: center;
+    border: 1px solid #ddd; /* Optional border */
+}
+
+.newsletter-content {
+    margin: 0 auto;
+}
+
+.newsletter-content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.newsletter-content p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.newsletter-signup form {
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter-signup input[type="email"] {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 60%; /* Adjust width as needed */
+}
+
+.newsletter-signup button {
+    background-color: #333; /* Dark background for button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,39 @@
+.welcome-section {
+    background-color: white; /* Or your desired background */
+    padding: 40px;
+    text-align: center;
+}
+
+.welcome-content {
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+.welcome-content h2 {
+    font-size: 2em; /* Adjust as needed */
+    margin-bottom: 20px;
+    color: #333; /* Or your desired text color */
+}
+
+.welcome-content p {
+    font-size: 1em; /* Adjust as needed */
+    color: #666; /* Or your desired text color */
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.learn-more-button {
+    background-color: #007bff; /* Or your desired button color */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em; /* Adjust as needed */
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+
+.learn-more-button svg {
+    margin-right: 10px;
+}
