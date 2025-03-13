@@ -1,43 +1,9 @@
 .hero-banner {
     position: relative;
     width: 100%;
-    height: 400px; /* Adjust height as needed */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
+    height: 400px;
+    background-color: rgba(28, 46, 87, 0.69);
     overflow: hidden;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 1; /* Ensure content is above the image */
-    width: 60%; /* Adjust width as needed */
-    padding: 20px;
-}
-
-.hero-title {
-    font-size: 2em; /* Adjust font size as needed */
-    margin-bottom: 10px;
-}
-
-.hero-subtitle {
-    font-size: 1em;
-    margin-bottom: 20px;
-}
-
-.hero-highlights {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.hero-highlights h3 {
-    margin-bottom: 10px;
-}
-
-.highlighted {
-    color: #007bff; /* Highlighted text color */
 }
 
 .hero-image {
@@ -46,10 +12,28 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('./slide.jpg'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
-    filter: brightness(0.5); /* Darken the image */
+    filter: brightness(0.7);
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hero-image::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+    opacity: 0.48;
+    background: rgb(1, 35, 70); /* Light blue overlay */
+}
+
+.hero-image.hidden {
+    opacity: 0;
 }
 
 .slider-dots {
@@ -61,14 +45,36 @@
 }
 
 .dot {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
-    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 0 8px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .dot.active {
     background-color: white;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1;
+    user-select: none;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
 }
