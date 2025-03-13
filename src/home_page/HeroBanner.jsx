@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import './HeroBanner.css';
 import image1 from './isro.png';
-import image2 from './slide.jpg';
+import image3 from './ancient_india.jpg';
+import image4 from './indisoul.jpg';
 
 const HeroBanner = () => {
-    const images = [image1, image2];
+    const images = [image1, image3, image4];
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [imageClasses, setImageClasses] = useState(['hero-image']);
 
@@ -31,7 +32,8 @@ const HeroBanner = () => {
             <div className="arrow left-arrow" onClick={handlePrev}>
                 &lt;
             </div>
-            <div className={imageClasses.join(' ')} style={{ backgroundImage: `url(${images[currentImageIndex]})` }}></div>
+            <div className={imageClasses.join(' ')}
+                 style={{backgroundImage: `url(${images[currentImageIndex]})`}}></div>
             <div className="arrow right-arrow" onClick={handleNext}>
                 &gt;
             </div>
