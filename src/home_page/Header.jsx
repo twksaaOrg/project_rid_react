@@ -5,7 +5,7 @@ const Header = () => {
         <div style={{
             width: '100%',
             height: "auto",
-            backgroundColor: '#012aa1', // Assuming the blue is similar to Bootstrap's primary blue
+            backgroundColor: '#1b4ed3', // Assuming the blue is similar to Bootstrap's primary blue
             color: 'white',
             paddingBottom: '10px',
             display: 'flex',
